@@ -1,4 +1,5 @@
 using System.IO;
+using System.Text.RegularExpressions;
 using Nox7atra.UPTG.DataStructures;
 using UnityEditor;
 using UnityEngine;
@@ -43,7 +44,7 @@ namespace Nox7atra.UPTG
                 LoadPackageData();
             }
             _CompanyName = EditorGUILayout.TextField("company-name*", _CompanyName);
-            _Version = EditorGUILayout.TextField("version (format: 1.x.x)", _Version);
+            _Version = EditorGUILayout.TextField("version* (format: 1.x.x)", _Version);
             _DisplayName = EditorGUILayout.TextField("display-name", _DisplayName);
             _Description = EditorGUILayout.TextField("description", _Description);
             _Email = EditorGUILayout.TextField("email", _Email);
@@ -92,7 +93,17 @@ namespace Nox7atra.UPTG
                 Debug.LogError("company-name can't be empty");
                 return;
             }
-
+            if (string.IsNullOrEmpty(_Version))
+            {
+                Debug.LogError("version can't be empty");
+                return;
+            }
+            if (!Regex.IsMatch(_Version, @"\d+\.\d+\.\d+"))
+            {
+                Debug.LogError("version should be in format: x.x.x");
+                return;
+            }
+            
             if (_PackageFile == null)
             {
                 _PackageFile = new PackageStructure();

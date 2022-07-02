@@ -1,0 +1,13 @@
+{
+    "name": "com.nox7atra.uptg",
+    "version": "1",
+    "displayName": "UPTG",
+    "description": "Пакет для генерации структуры подключаемого Unity пакета",
+    "unity": "2021.3",
+    "unityRelease": "1f1",
+    "author": {
+        "name": "nox7atra",
+        "email": "dyadichenkoga@yandex.ru",
+        "url": "https://noxatra.ru/"
+    }
+}

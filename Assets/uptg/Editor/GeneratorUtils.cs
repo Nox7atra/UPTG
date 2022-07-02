@@ -41,6 +41,7 @@ namespace Nox7atra.UPTG
 
         public static void GenerateAsmdef(string path, string name, string[] includePlatforms = null)
         {
+            if(File.Exists(path)) return;
             AsmdefStructure structure = new AsmdefStructure();
             structure.name = name;
             structure.includePlatforms = includePlatforms;

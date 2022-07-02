@@ -43,7 +43,7 @@ namespace Nox7atra.UPTG
                 LoadPackageData();
             }
             _CompanyName = EditorGUILayout.TextField("company-name*", _CompanyName);
-            _Version = EditorGUILayout.TextField("version", _Version);
+            _Version = EditorGUILayout.TextField("version (format: 1.x.x)", _Version);
             _DisplayName = EditorGUILayout.TextField("display-name", _DisplayName);
             _Description = EditorGUILayout.TextField("description", _Description);
             _Email = EditorGUILayout.TextField("email", _Email);

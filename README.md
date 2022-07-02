@@ -1,5 +1,6 @@
 # Unity Package Template Generator
-## nox7atra dyadichenkoga@yandex.ru
+
+![github-small](cover.png)
 
 Пакет для генерации структуры подключаемого Unity пакета
 

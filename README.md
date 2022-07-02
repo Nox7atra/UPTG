@@ -1,4 +1,4 @@
-# UPTG
+# Unity Package Template Generator
 ## nox7atra dyadichenkoga@yandex.ru
 
 Пакет для генерации структуры подключаемого Unity пакета

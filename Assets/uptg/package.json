@@ -1,6 +1,6 @@
 {
     "name": "com.nox7atra.uptg",
-    "version": "1",
+    "version": "1.0",
     "displayName": "UPTG",
     "description": "Пакет для генерации структуры подключаемого Unity пакета",
     "unity": "2021.3",

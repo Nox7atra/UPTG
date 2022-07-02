@@ -1,5 +1,4 @@
 # Unity Package Template Generator
-## nox7atra dyadichenkoga@yandex.ru
 
 ![github-small](cover.png)
 
